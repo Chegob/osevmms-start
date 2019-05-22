@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
@@ -19,8 +20,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
-   
-    <!-- Left navbar links -->
+   <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
@@ -98,7 +98,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
      
           <li class="nav-item">
           <router-link to="/profile" class="nav-link">
-            <i class="nav-icon fas fa-user"></i>
+            <i class="nav-icon fas fa-user orange"></i>
             <p>
               Profile
             </p>
@@ -123,17 +123,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     
-  </div>
-   
-    <!-- Main content -->
+  <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-          <router-view></router-view>
-          <div class="row">
-          
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+        <router-view></router-view> 
+    </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
   </div>
@@ -146,7 +140,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2018 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2019 <a href="https://osevmms.io">OSEMVVS.io</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
