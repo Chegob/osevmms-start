@@ -99,7 +99,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
      
           <li class="nav-item">
           <router-link to="/profile" class="nav-link">
-            <i class="nav-icon fas fa-user orange"></i>
+            <i class="nav-icon fas fa-user magenta"></i>
             <p>
               Profile
             </p>
@@ -141,7 +141,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2019 <a href="https://osevmms.io">OSEMVVS.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014-2108 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
