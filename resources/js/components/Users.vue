@@ -11,8 +11,7 @@
                      data-target="#exampleModal">Add New<i class="fas
                      fa-user-plus fa-fw"></i></button>
                 </div>
-                
-                </div>
+              </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
                 <table class="table table-hover">
@@ -46,44 +45,21 @@
           </div>
         </div> 
         <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addNewModal" tabindex="-1" role="dialog" aria-labelledby="addNewModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="addNewModalLabel">Add New</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        
-        <div class="form-group">
-             <input v-model="form.name" type="text" name="name"
-             placeholder="Name"
-              class="form-control" :class="{ 'is-invalid': 
-              form.errors.has('name') }">
-          <has-error :form="form" field="name"></has-error>
+          <div class="form-group">
+           <input v-model="form.name" type="text" name="name"
+             class="form-control" :class="{ 'is-invalid':form.errors.has('username') }">
+          <has-error :form="form" field="username"></has-error>
      </div>
-     <div class="form-group">
-             <input v-model="form.<div class="form-group">
-             <input v-model="form.name" type="text" name="name"
-             placeholder="Name"
-              class="form-control" :class="{ 'is-invalid': 
-              form.errors.has('name') }">
-          <has-error :form="form" field="name"></has-error>
-     </div>" 
-
-     <div class="form-group">
-             <input v-model="form.<div class="form-group">
-             <input v-model="form.email" type="text" email="email"
-             placeholder="Email"
-              class="form-control" :class="{ 'is-invalid': 
-              form.errors.has('email') }">
-          <has-error :form="form" field="email"></has-error>
-     </div>"
-     
-     </div>
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" 

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!--
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
@@ -30,8 +29,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- SEARCH FORM -->
     <form class="form-inline ml-3">
       <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" 
-        placeholder="Search" aria-label="Search">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
         <div class="input-group-append">
           <button class="btn btn-navbar" type="submit">
             <i class="fa fa-search"></i>
@@ -46,8 +44,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="./img/logo.jpg" alt="VMMSApp logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+      <img src="./img/logo.jpg" alt="VMMSApp logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">VMMSApp Start</span>
     </a>
 
@@ -86,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <i class="nav-icon fa fa-cog "></i>
                   <p>Management</p>
                 </a>
-                          
+                   
               <ul class="nav nav-treeview">
               <li class="nav-item">
                 <router-link to="/users" class="nav-link">
