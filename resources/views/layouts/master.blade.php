@@ -96,20 +96,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
      
           <li class="nav-item">
           <router-link to="/profile" class="nav-link">
-            <i class="nav-icon fas fa-user magenta"></i>
+            <i class="nav-icon fas fa-user"></i>
             <p>
               Profile
             </p>
           </router-link>
         </li>
-
-         <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-power-off"></i>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('logout') }}"
+             onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+              <i class="nav-icon fas fa-power-off red"></i>
               <p>
-                  Logout
-                </p>
-              </a>
+                  {{ __('Logout') }}
+              </p>
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
             </li>
         </ul>
       </nav>
@@ -125,7 +129,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         <router-view></router-view> 
-    </div><!-- /.container-fluid -->
+        </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
   </div>
@@ -142,7 +146,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </footer>
 </div>
 <!-- ./wrapper -->
-
+@auth
+    <script>
+    window.user=@json(auth()->user())
+        </script>
+@endauth
 <script src="/js/app.js"></script>
 </body>
 </html>

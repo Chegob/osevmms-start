@@ -7,9 +7,7 @@
                 <h3 class="card-title">Users Table</h3>
 
                 <div class="card-tools">
-                    <button class="btn-btn success" data-toggle="modal" 
-                     data-target="#exampleModal">Add New<i class="fas
-                     fa-user-plus fa-fw"></i></button>
+                    <button class="btn-btn success" data-toggle="modal" data-target="#addNew">Add New<i class="fas fa-user-plus fa-fw"></i></button>
                 </div>
               </div>
               <!-- /.card-header -->
@@ -29,7 +27,7 @@
                     <td><span class="tag tag-success">Approved</span></td>
                     <td>
                       <a href="#">
-                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-edit blue"></i>
                       </a>
                       <a href="#">
                         /
@@ -45,23 +43,19 @@
           </div>
         </div> 
         <!-- Modal -->
-<div class="modal fade" id="addNewModal" tabindex="-1" role="dialog" aria-labelledby="addNewModalLabel" aria-hidden="true">
+<div class="modal fade" id="addNew" tabindex="-1" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="addNewModalLabel">Add New</h5>
+        <h5 class="modal-title" id="addNewLabel">Add New</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-          <div class="form-group">
-           <input v-model="form.name" type="text" name="name"
-             class="form-control" :class="{ 'is-invalid':form.errors.has('username') }">
-          <has-error :form="form" field="username"></has-error>
-     </div>
-      </div>
-      <div class="modal-footer">
+
+       </div>
+       <div class="modal-footer">
         <button type="button" class="btn btn-danger" 
         data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Create</button>
